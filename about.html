@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Swap our for actual link-->
+    <link rel="canonical" href="https://www.company.com/about">
+
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <!--Social Media Display-->
+    <meta property="og:title" content=""/>
+    <meta property="og:description" content=""/>
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content=""/>
+    <meta property="og:image" content="/images/social.jpg"/>
+    <meta property="og:image:secure_url" content="/images/social.jpg"/>
+
+    <!--Favicons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="/tablogo.jpg">
+    <link rel="icon" type="image/png" sizes="32x32" href="/tablogo.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/tablogo.jpg">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Preload -->
+    <link rel="preload" as="image" href="/images/cabinets2-m.jpg">
+    <link rel="preload" as="font" type="font/woff2" href="fonts/roboto-v29-latin-regular.woff2" crossorigin>
+    <link rel="preload" as="font" type="font/woff2" href="fonts/roboto-v29-latin-700.woff2" crossorigin>
+
+    <link rel="stylesheet" href="styles/root.css">
+    <link rel="stylesheet" href="styles/about.css">
+    <link rel="stylesheet" href="styles/dark.css">
+
+    <!--Put analytics tag here at the bottom to prevent it from render blocking-->
+
+    <title>Instructions</title>
+</head>
+<body>
+    <!--Screen reader skip main nav-->
+    <a class="skip" aria-label="skip to main content" href="#main">Click To Skip To Main Content</a>
+
+    <!-- ============================================ -->
+    <!--                 Navigation                   -->
+    <!-- ============================================ -->
+
+    <div id="navigation">
+        <div aria-hidden="true" class="background-color-div">
+            <!--This div is used to overcome a z-index issue where the open
+                #navbar-menu is on top of the #navigation. This bar places itself 
+                the #navbar-menu so that menu appears behind the #navigation
+            -->
+        </div>
+        <div class="container">
+            <!--Logo - Get SVGs if you can.  I use fiverr to get png's turned into SVGs. Highly recommend it, worth the $20 - get a light and dark version-->
+            <a class="logo" aria-label="click to go to home page" href="index.html">
+                <!--Light Colored Logo, remove .dark image tag and the .light class if you don't have a dark and light version -->
+                <img class="light" aria-hidden="true" src="images/logo.png" decoding="async" alt="logo" width="221" height="66">
+
+                <!--Dark Colored Logo-->
+                <img class="dark" aria-hidden="true" src="images/logo.png" decoding="async" loading="lazy" alt="logo" width="221" height="66">
+            </a>
+
+            <!--Main Nav-->
+            <nav id="navbar-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a class="active" href="about.html">Instructions</a></li>
+                    <li><a href="projects.html">Store</a></li>
+                </ul>
+            </nav>
+
+            <!--Dark Mode toggle-->
+            <button id="dark-mode-toggle">
+                <!--Moon is an inline SVG so you can edit the color if needed-->
+                <svg class="moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" style="enable-background:new 0 0 480 480" xml:space="preserve"><path d="M459.782 347.328c-4.288-5.28-11.488-7.232-17.824-4.96-17.76 6.368-37.024 9.632-57.312 9.632-97.056 0-176-78.976-176-176 0-58.4 28.832-112.768 77.12-145.472 5.472-3.712 8.096-10.4 6.624-16.832S285.638 2.4 279.078 1.44C271.59.352 264.134 0 256.646 0c-132.352 0-240 107.648-240 240s107.648 240 240 240c84 0 160.416-42.688 204.352-114.176 3.552-5.792 3.04-13.184-1.216-18.496z"/></svg>
+                <img class="sun" aria-hidden="true" src="/images/sun.svg" decoding="async" alt="moon" width="15" height="15">
+            </button>
+
+            <!--Mobile Nav toggle-->
+            <button class="hamburger-menu">
+                <span aria-hidden="true"></span>
+            </button>
+        </div>
+    </div>
+
+    <main id="main">
+
+        <!-- ============================================ -->
+        <!--                    LANDING                   -->
+        <!-- ============================================ -->
+    
+        <section id="int-hero">
+            <h1 id="home-h">How To Play</h1>
+            <picture>
+                <source media="(max-width: 600px)" srcset="images/joshgmid.png">
+                <source media="(min-width: 601px)" srcset="images/joshgmid.png">
+                <img aria-hidden="true" decoding="async" src="images/joshgmid.png" alt="cabinets" width="400" height="662">
+            </picture>
+        </section>
+
+        <!-- ============================================ -->
+        <!--                   About                      -->
+        <!-- ============================================ -->
+
+        <section id="sidebyside" class="sidebyside">
+            <div class="container">
+                <div class="content">
+                     <ul>
+                        <h2 class="title">Setup</h2>
+                        <p><span>Match your positive (blue) cards with your negative (red) cards to maximize your score. But be careful!
+The order you play the matches matters- and don’t get caught with a bunch of reds in your hand!</span></p>
+                            <p><span>This game has 2 versions: basic and advanced. Start with basic until you’re comfortable, then move on
+to the advanced version!</span></p>   
+                        <li>
+                            <span>1. Remove “Trade”, “Steal”, and “Wild” cards.</span>
+                        </li>
+                        <li>
+                            <span>2. Keep the blue and red decks separate.</span>
+                        </li>
+                        <li>
+                            <span>3. A dealer shuffles each deck and distributes (clockwise) 5 blue and 5 red cards to each player. Don’t
+show other players your cards!</span>
+                        </li>
+                       <li>
+                            <span>4. Place each deck in the center of the table. Each deck has its own discard pile.</span>
+                        </li>
+                    </ul>
+                </div>
+                <picture >
+                     <source media="" srcset="images/piles.png">
+                     <source media="" srcset="images/piles.png">
+                     <img aria-hidden="true" loading="lazy" decoding="async" src="images/piles.png" alt="cabinets" >
+                 </picture>
+            </div>
+       </section>
+
+        <section id="sidebyside" class="sidebyside">
+            <div class="container">
+                <div class="content">
+                     <ul>
+                        <h2 class="title">Basic Gameplay</h2>
+                        <p><span>Match your blue cards with your red cards to create matches. Matches can only be created with corresponding values. - (Ex. <1000> must be matched to 1000</span></p>
+                            <p class="careful"><span>Be Careful! The order you play your matches can affect your score and don't get caught with a bunch of red cards in your hand at the end of the round.</span></p>   
+                    </ul>
+                </div>
+                <picture >
+                     <source media="" srcset="images/cards-1000.png">
+                     <source media="" srcset="images/cards-1000.png">
+                     <img aria-hidden="true" loading="lazy" decoding="async" src="images/cards-1000.png" alt="cabinets" >
+                 </picture>
+            </div>
+       </section>
+
+        <section id="sidebyside" class="sidebyside">
+            <div class="container">
+                <div class="content">
+                     <ul>
+                        <h2 class="title">How to Play a Turn</h2>
+                        <p><span>The player to the left of the dealer goes first.</span></p>  
+                        <li>
+                            <span>1. Draw a blue or red card from the top of the deck OR the top card of either discard pile.</span>
+                        </li>
+                        <li>
+                            <span>2. You play matches by laying them down next to each other in front of you. You can play as
+many matches as you choose, on your turn. Each subsequent match is played on top of the previous
+match but you must swap the colors!</span>
+                        </li>
+                        <li>
+                            <span>3. A dealer shuffles each deck and distributes (clockwise) 5 blue and 5 red cards to each player. Don’t
+show other players your cards!</span>
+                        </li>
+                       <li>
+                            <span>4. After discarding, it is the next player’s turn and your matches (order) cannot change4. You can only
+add to your matches on your future turns.</span>
+                        </li>
+                    </ul>
+                </div>
+                <picture >
+                     <source media="" srcset="images/stacks.png">
+                     <source media="" srcset="images/stacks.png">
+                     <img aria-hidden="true" loading="lazy" decoding="async" src="images/stacks.png" alt="cabinets" >
+                 </picture>
+            </div>
+       </section>
+
+        <section id="sidebyside" class="sidebyside">
+            <div class="container">
+                <div class="content">
+                     <ul>
+                        <h2 class="title">End of Round:</h2>
+                        <p><span>The round ends when a player runs out of cards in their hand. Once the round ends, you calculate the
+scores for that round.</span></p>
+                    </ul>
+                </div>
+            </div>
+       </section>
+
+        <section id="sidebyside" class="sidebyside">
+            <div class="container">
+                <div class="content">
+                     <ul>
+                        <h2 class="title">Calculating a Score</h2>
+                        <p><span>Add both stacks in front of you.</span></p>
+                        <p><span>Take the number from the positive stack (Circled) and subtract any remaining red cards in-hand from that number. That new number is your final score for the round.</span></p>
+                        <p><span>Play again! Add each player’s score from 3 rounds. The player with the highest score wins!</span></p>
+                    </ul>
+                </div>
+                <picture >
+                     <source media="" srcset="images/calculating.jpg">
+                     <source media="" srcset="images/calculating.jpg">
+                     <img aria-hidden="true" loading="lazy" decoding="async" src="images/calculating.jpg" alt="cabinets" >
+                 </picture>
+            </div>
+       </section>
+
+        <section id="sidebyside" class="sidebyside">
+            <div class="container">
+                <div class="content">
+                     <ul>
+                        <h2 class="title">Running out of Cards</h2>
+                        <p><span>If there are no cards left int eh blue or red decks after a player’s turn, the respective discard piles are
+reshuffled and the deck starts face down again.</span></p>
+                    </ul>
+                </div>
+            </div>
+       </section>
+
+        <section id="sidebyside" class="sidebyside">
+            <div class="container">
+                <div class="content">
+                     <ul>
+                        <h2 class="title">Advanced Version Setup:</h2>  
+                        <li>
+                            <span>1. Draw a blue or red card from the top of the deck OR the top card of either discard pile.</span>
+                        </li>
+                        <li>
+                            <span>2. You play matches by laying them down next to each other in front of you. You can play as
+many matches as you choose, on your turn. Each subsequent match is played on top of the previous
+match but you must swap the colors!</span>
+                        </li>
+                        <li>
+                            <span>3. A dealer shuffles each deck and distributes (clockwise) 5 blue and 5 red cards to each player. Don’t
+show other players your cards!</span>
+                        </li>
+                    </ul>
+                </div>
+                <picture >
+                     <source media="" srcset="images/advancedmode.jpg">
+                     <source media="" srcset="images/advancedmode.jpg">
+                     <img aria-hidden="true" loading="lazy" decoding="async" src="images/advancedmode.jpg" alt="cabinets" >
+                 </picture>
+            </div>
+       </section>
+
+        <section id="sidebyside" class="sidebyside">
+            <div class="container">
+                <div class="content">
+                     <ul>
+                        <h2 class="title">Trade Cards:</h2>  
+                        <li><span>You must have a numbered card in your hand to play a Trade card.</span></li>
+                        <li>
+                            <span>1. You must have a numbered card in your hand to play a Trade card.</span>
+                        </li>
+                        <li>
+                            <span>2. Pick another player. Each discretely passes their cards in hand that match the color of the Trade card
+played.</span>
+                        </li>
+                        <li>
+                            <span>3. Each player picks one numbered card of the other player’s to keep. If your target has no numbered
+cards, say “no trade” and each gives the cards back. You then pick another player to trade.</span>
+                        </li>
+                        <li>
+                            <span>4. After there is a trade, each passes the rest of the cards back to the original owner. If a trade is not
+possible from any player, go to step 5.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+       </section>
+
+        <section id="sidebyside" class="sidebyside">
+            <div class="container">
+                <div class="content">
+                     <ul>
+                        <h2 class="title">Steal Cards:</h2> 
+                        <li>
+                            <span>1. Play this card on your turn by placing it in the advanced discard pile that matches its color.</span>
+                        </li>
+                        <li>
+                            <span>2. Pick another player. That player discretely passes their cards in hand to you that match the color o the
+Steal card played.</span>
+                        </li>
+                        <li>
+                            <span>3. The thief takes one numbered card and hands the rest of the cards back to the victim. If the victim has
+no numbered cards, the thief says “no steal”, hands the cards back and chooses another player/victim.</span>
+                        </li>
+                        <li>
+                            <span>4. After there is a steal ,the victim draws form the matching color deck. If a steal si not possible from any
+player, the thief draws from the matching color deck.</span>
+                        </li>
+                        <li><span>You can discard Steal cards in the normal discard piles as your turn-ending discard (the color matters). In
+this case, no action would be taken regarding a steal and it can be picked up by other players.</span></li>
+                    </ul>
+                </div>
+            </div>
+       </section>
+
+        <section id="sidebyside" class="sidebyside">
+            <div class="container">
+                <div class="content">
+                     <ul>
+                        <h2 class="title">Wild Cards</h2>
+                        <p><span>You can use any blue Wild card with any red numbered card and any red Wild card with any blue
+numbered card to form a match.</span></p>
+                        <p><span>A red Wild card is worth &lt;10,000&gt; if not played.</span></p>
+                        <p><span>In the unlikely event you would like to discard a Wild card in the advanced discard pile, you must then
+draw form the same colored deck.</span></p>
+                        <p><span>You can also discard Wild cards in the normal discard piles as your turn-ending discard (the color
+matters) and it can be picked up by other players. This is unlikely as well.</span></p>
+<p><span>Thank you for playing! Enjoy!</span></p>
+                    </ul>
+                </div>
+            </div>
+       </section>
+        <!-- ============================================ -->
+        <!--             Final Call to Action             -->
+        <!-- ============================================ -->
+
+        <section id="cta">
+            <div class="container">
+                <h2 class="title">Visit our Store</h2>
+
+                <a href="/contact.html" class="button-solid">Buy it Now</a>
+            </div>
+            <picture>
+                <source media="(max-width: 600px)" srcset="images/crebandbits2.jpg">
+                <source media="(min-width: 601px)" srcset="images/crebandbits2.jpg">
+                <img aria-hidden="true" loading="lazy" decoding="async" src="images/crebandbits2.jpg" alt="kitchen cabinets" width="1920" height="1280">
+             </picture>
+        </section>
+
+    </main>
+
+    <!-- ============================================ -->
+    <!--                   Footer                     -->
+    <!-- ============================================ -->
+
+    <footer id="footer">
+        <div class="container">
+            <div class="left-section">
+                <a class="logo" href="index.html"><img loading="lazy" decoding="async" src="images/logo.png" alt="logo" width="264" height="78"></a>
+
+            </div>
+            <div class="right-section">
+                <div class="lists">
+                    <ul>
+                        <li><h2>Information</h2></li>
+                        <li><a href="/index.html">Home</a></li>
+                        <li><a href="/about.html">Instructions</a></li>
+                        <li><a href="/projects.html">Store</a></li>
+                    </ul>
+                    <ul>
+                        <li><h2>Contact</h2></li>
+                        <li><a href="mailto:crebbits@email.com">Click to Email</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="credit">
+            <a href="" target="_blank" rel="noopener">Crebbits</a>
+            <span class="copyright"> &copy; 2023</span></div>
+    </footer>
+
+    <script defer src="nav.js"></script>
+    <script defer src="dark.js"></script>
+    <!--
+        This script adds a class to the body after scrolling 100px
+        and we used these body.scroll styles to create some on scroll 
+        animations with the navbar
+    -->
+    <script defer>
+        document.addEventListener('scroll', (e) => { 
+            const scroll = document.documentElement.scrollTop;
+            if(scroll >= 100){
+        document.querySelector('body').classList.add('scroll')
+            } else {
+            document.querySelector('body').classList.remove('scroll')
+            }
+        });
+    </script>
+
+</body>
+</html>
